@@ -1,0 +1,139 @@
+{
+  "schema": "proofos.model-review.v1",
+  "task_id": "04cd91de-b21b-4083-a0c1-7501e97a3efd",
+  "recovery_of": {
+    "prior_record_sha256": "ce4c5e77971929c45a619b37949491c34584f8d66afd418cd4e0a0c55f89ed6e",
+    "prior_receipt_sha256": "d043a7dff6aa78305323696c04518e3289ea98afb8584c33f1ff3c566cc9c2df",
+    "prior_task_id": "1d36105f-beda-41b0-a044-b82481ddcf25",
+    "prior_http_status": 401,
+    "prior_cost_basis": "Unknown; additional budget does not assert zero prior cost"
+  },
+  "release_id": "sha256:c2b57f4b3b69dc3a7554a84932b5e23db23af652546379d7bd681e28927e101c",
+  "guard_candidate_id": "sha256:49aff9f118883edfe9f34067cd548f92bc7f1aa848653b0d10263065f9af5e2f",
+  "requested_model": "nvidia/nemotron-3-super-120b-a12b",
+  "provider": "Nebius Token Factory",
+  "plan": {
+    "authority": "proofos:nebius-only:2026-10-29:credential-recovery:02",
+    "endpoint": "https://api.tokenfactory.us-central1.nebius.com/v1/chat/completions",
+    "model": "nvidia/nemotron-3-super-120b-a12b",
+    "request_sha256": "e78fa51945b3fb20904cb1894feaa158c3f4e39f6fb873dea7fa00a3c3335491",
+    "input_sha256": "b68a7b94929a13f683ddf7cc250a220abbf31ff28d4ab43c137a211b9b47108f",
+    "max_cost_usd": "0.05",
+    "max_output_tokens": 1024,
+    "max_calls": 1,
+    "retries": 0,
+    "expires_at": "2026-10-30T14:00:00+00:00",
+    "approved_at": "2026-10-30T00:16:46+00:00",
+    "approval_record_sha256": "17b96b7a943a2581d77ebf4457c95977ce7e9d281f4c42db0035e3642c357790",
+    "budget_basis": "estimate_not_provider_cap",
+    "timeout_basis": "per_io_not_total",
+    "prior_receipt_sha256": "d043a7dff6aa78305323696c04518e3289ea98afb8584c33f1ff3c566cc9c2df",
+    "prior_reservation": "nebius-only-20261027-01.json",
+    "recovery_reservation": "nebius-only-20261029-recovery-02.json"
+  },
+  "execution_evidence": "OBSERVED_RESPONSE",
+  "final_status": "NEEDS_REVIEW",
+  "fully_verified": false,
+  "source_review": {
+    "schema": "proofos.source-review.v1",
+    "task_id": "04cd91de-b21b-4083-a0c1-7501e97a3efd",
+    "candidate_id": "sha256:dbe3b9796f61a780ecec7fdad1a7e8f4dcbcaf24ad09b39612c35a07f66ca9bf",
+    "reviewed_at": "2026-10-30T02:19:40.919754+00:00",
+    "requested_outcome": "Review supplied source text for a proposed claim",
+    "final_status": "NEEDS_REVIEW",
+    "fully_verified": false,
+    "conclusion": "Quoted passage found in supplied text",
+    "recommended_next_action": "Review whether the passage actually supports the claim, then verify the original source and its date.",
+    "checks": [
+      {
+        "name": "Quotation in supplied excerpt (whitespace normalized, case sensitive)",
+        "outcome": "PASS"
+      },
+      {
+        "name": "Claim meaning and factual truth",
+        "outcome": "NOT_CHECKED"
+      },
+      {
+        "name": "Original source authenticity and publication date",
+        "outcome": "NOT_CHECKED"
+      },
+      {
+        "name": "Contradictions across sources",
+        "outcome": "NOT_CHECKED"
+      },
+      {
+        "name": "Live NVIDIA inference through Nebius",
+        "outcome": "NOT_CHECKED"
+      }
+    ],
+    "evidence": {
+      "claim": "The hackathon submission deadline is October 30, 2026 at 10 AM Pacific.",
+      "quote": "Submissions are due Friday, October 30 at 10:00 AM PT.",
+      "excerpt": "Submissions are due Friday, October 30 at 10:00 AM PT.",
+      "url": "https://nebiusglobalaihackathon.devpost.com/updates/46207-final-stretch-here-s-your-submission-checklist",
+      "origin": "operator_supplied_text",
+      "source_fetched_by_app": false,
+      "source_retrieved_at": null,
+      "input_sha256": "b68a7b94929a13f683ddf7cc250a220abbf31ff28d4ab43c137a211b9b47108f"
+    },
+    "authorization": "No external action requested or authorized",
+    "actions_performed": [
+      "Validated input",
+      "Compared quotation with supplied excerpt",
+      "Generated this review receipt"
+    ],
+    "provider_calls": 0,
+    "external_actions": 0,
+    "model": null,
+    "provider_cost": null,
+    "cost_basis": "No provider was called. No provider cost measurement was performed."
+  },
+  "model_analysis": {
+    "model_assessment": {
+      "verdict": "INSUFFICIENT",
+      "explanation": "The excerpt confirms the deadline is October 30 at 10:00 AM PT but does not mention the year 2026, so we cannot verify the full claim.",
+      "evidence_quote": ""
+    },
+    "input_sha256": "b68a7b94929a13f683ddf7cc250a220abbf31ff28d4ab43c137a211b9b47108f",
+    "final_status": "NEEDS_REVIEW",
+    "fully_verified": false,
+    "assessment_scope": "Model text validation only; provider execution and factual truth not established"
+  },
+  "provider_evidence": {
+    "http_status": 200,
+    "response_id": "chatcmpl-b1ffe3497e224cc7",
+    "model": "nvidia/nemotron-3-super-120b-a12b",
+    "finish_reasons": [
+      "stop"
+    ],
+    "usage": {
+      "prompt_tokens": 263,
+      "completion_tokens": 262,
+      "total_tokens": 525
+    }
+  },
+  "provider_calls": 1,
+  "reported_model": "nvidia/nemotron-3-super-120b-a12b",
+  "response_id": "chatcmpl-b1ffe3497e224cc7",
+  "usage": {
+    "prompt_tokens": 263,
+    "completion_tokens": 262,
+    "total_tokens": 525
+  },
+  "priced_usage_usd": "0.0003147",
+  "cost_basis": "Estimate from observed tokens and displayed regional rates; final invoice and taxes unverified",
+  "elapsed_ms": 1860.576,
+  "timing_basis": "Guard elapsed time, including evidence persistence; not pure model latency.",
+  "started_at": "2026-10-30T02:19:39.053642+00:00",
+  "finished_at": "2026-10-30T02:19:40.918688+00:00",
+  "run_state": "COMPLETE",
+  "retries": 0,
+  "source_fetched_by_app": false,
+  "recommended_next_action": "Review the model assessment against the original source. This attempt cannot be repeated.",
+  "incomplete_checks": [
+    "Original source authenticity and publication date",
+    "Factual truth beyond supplied text",
+    "Contradictions across sources",
+    "Business outcome verification"
+  ]
+}

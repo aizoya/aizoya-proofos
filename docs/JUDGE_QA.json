@@ -1,0 +1,22 @@
+{
+  "release_id": "sha256:81a886dbd32142126b519a7ffe32daa1488a3a0f7e3e34348f77c2ba6e692537",
+  "checks": [
+    "/ served",
+    "/recorded.js served",
+    "/recorded-nebius-run.json served",
+    "receipt byte identity",
+    "deterministic service ready",
+    "interactive passage check stays unverified with zero calls",
+    "cross-origin rejected",
+    "no hosted inference route"
+  ],
+  "guard_tests": 48,
+  "app_tests": 16,
+  "recorded_js": "PASS: valid receipt, exact download, no initial/provider calls, tampering and errors",
+  "provider_calls": 0,
+  "owner_ledger_access": false,
+  "browser_runtime": "NOT_EXECUTED",
+  "deployment": "NOT_PERFORMED",
+  "f4_f5": "OPEN",
+  "public_access": "NOT_VERIFIED"
+}
