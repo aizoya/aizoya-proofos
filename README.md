@@ -1,6 +1,6 @@
 # AIZOYA ProofOS — judge presentation candidate
 
-This is a successor presentation candidate, not the already reviewed R5 application. Its new app release is `sha256:81a886dbd32142126b519a7ffe32daa1488a3a0f7e3e34348f77c2ba6e692537`. The original R5 provider receipt retains its historical release identity. No new inference grant is created.
+This is a successor presentation candidate, not the already reviewed R5 application. Its new app release is `sha256:a0b6d19d2b2f7795bc05ad491f77ee2d1aa5e91d3b3c1ba0a3b19c8748d906d3`. The original R5 provider receipt retains its historical release identity. No new inference grant is created.
 
 Judges can interact with a deterministic passage checker and inspect/download a clearly labeled recorded live Nebius/NVIDIA response. The recorded response is never represented as fresh analysis of the judge’s edited text. Its packaged hash establishes byte consistency, not provider provenance. Both paid attempts remain consumed.
 
@@ -58,3 +58,15 @@ Managed Token Factory API access enabled a focused Nemotron assessment without G
 ## License
 
 MIT; see [LICENSE](LICENSE). The project owner confirmed this is a new project with no version before August 26, 2026.
+
+## Final QA reconciliation — October 30
+
+A supplied Claude review of the parent app c2b57f4b / commit440ce925 returned MODIFY for stale pre-run UI copy and receipt/governance documentation. Its executed 48 R5,16 app and40 R4 tests belong to that parent review, not this presentation delta. This successor replaces the outdated live-attempt panel with the recorded-result workflow; it still requires a new exact-candidate review.
+
+The nested `source_review` is the deterministic sub-check. Its zero-provider-call count and live-inference NOT_CHECKED entry apply only to that component. The outer receipt holds the observed model call. `task_id` is a display identifier generated after execution and does not identify the persistent run ledger. Reconciliation uses the retained ledger plus provider `response_id`. The original receipt is preserved unchanged; do not treat its nested check as whole-workflow verification. Persisting a canonical task ID would be a separate runtime change requiring review.
+
+Guard elapsed includes the post-response checkpoint write. Initial reservation and final terminal writes are outside the timer. The original receipt wording remains historical; this clarification controls presentation of its timing.
+
+See [the pre-run acceptance-note supplement](docs/R5_PRE_RUN_REVIEW_RECORD.md) for the source artifact missing from the earlier packet. It is author-recorded evidence of a supplied GO, not signed external-review provenance; that distinction remains subject to reviewer acceptance. Do not retroactively treat the latest review as execution authorization.
+
+The filesystem guard tests need POSIX capabilities, including `pwd`, `dir_fd`, FIFO and no-follow support. Unsupported platforms are not accepted by these results.

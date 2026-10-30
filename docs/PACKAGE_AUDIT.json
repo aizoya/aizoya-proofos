@@ -1,6 +1,6 @@
 {
   "scope": "Successor judge presentation source only",
-  "release_id": "sha256:81a886dbd32142126b519a7ffe32daa1488a3a0f7e3e34348f77c2ba6e692537",
+  "release_id": "sha256:a0b6d19d2b2f7795bc05ad491f77ee2d1aa5e91d3b3c1ba0a3b19c8748d906d3",
   "bound_files": 42,
   "runtime_hash_postcheck": "PASS",
   "guard_changed": false,
@@ -12,5 +12,7 @@
     "exact historical receipt copied to static public asset"
   ],
   "release_acceptance": "REVIEW_REQUIRED",
-  "f4_f5": "OPEN"
+  "f4_f5": "OPEN",
+  "previous_tested_release_id": "sha256:81a886dbd32142126b519a7ffe32daa1488a3a0f7e3e34348f77c2ba6e692537",
+  "followup": "HTML labels and unbound documentation only; original test runs precede this wording correction. Fresh JS and source checks follow."
 }
