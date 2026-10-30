@@ -1,0 +1,26 @@
+{
+  "plan": {
+    "authority": "proofos:nebius-only:2026-10-29:credential-recovery:02",
+    "endpoint": "https://api.tokenfactory.us-central1.nebius.com/v1/chat/completions",
+    "model": "nvidia/nemotron-3-super-120b-a12b",
+    "request_sha256": "e78fa51945b3fb20904cb1894feaa158c3f4e39f6fb873dea7fa00a3c3335491",
+    "input_sha256": "b68a7b94929a13f683ddf7cc250a220abbf31ff28d4ab43c137a211b9b47108f",
+    "max_cost_usd": "0.05",
+    "max_output_tokens": 1024,
+    "max_calls": 1,
+    "retries": 0,
+    "expires_at": "2026-10-30T14:00:00+00:00",
+    "approved_at": "2026-10-30T00:16:46+00:00",
+    "approval_record_sha256": "17b96b7a943a2581d77ebf4457c95977ce7e9d281f4c42db0035e3642c357790",
+    "budget_basis": "estimate_not_provider_cap",
+    "timeout_basis": "per_io_not_total",
+    "prior_receipt_sha256": "d043a7dff6aa78305323696c04518e3289ea98afb8584c33f1ff3c566cc9c2df",
+    "prior_reservation": "nebius-only-20261027-01.json",
+    "recovery_reservation": "nebius-only-20261029-recovery-02.json"
+  },
+  "files": {
+    "run_once.py": "c30b6d9132bf52f7436e2dda1809c532cebfb56345c06a15d7ffbddd323367aa",
+    "analysis_contract.py": "99e72da6f78cf98b36ef1ef116f251a9bfa3e6125182aa9122e5a557e442a27c",
+    "core.py": "978bbb040d61bfbb33f5dcf5bc24a2a7df2f0f1ec5175cdab54cb5f9d7c4c53d"
+  }
+}

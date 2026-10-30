@@ -1,0 +1,20 @@
+{
+  "candidate_id": "sha256:49aff9f118883edfe9f34067cd548f92bc7f1aa848653b0d10263065f9af5e2f",
+  "identity": {
+    "files": {
+      "APPROVAL_RECORD.json": "17b96b7a943a2581d77ebf4457c95977ce7e9d281f4c42db0035e3642c357790",
+      "APPROVAL_SCOPE.txt": "2a0ab5c859343909f1a0e8438990f9c9e3981e2100db24a0cbf4f6d35fc9c72f",
+      "PRIOR_RECEIPT.json": "d043a7dff6aa78305323696c04518e3289ea98afb8584c33f1ff3c566cc9c2df",
+      "REVIEW_REQUEST.md": "fe5815d9728f6f4b11a25557526a76cb1d7557865a427020ff7d3014bca993ce",
+      "analysis_contract.py": "99e72da6f78cf98b36ef1ef116f251a9bfa3e6125182aa9122e5a557e442a27c",
+      "core.py": "978bbb040d61bfbb33f5dcf5bc24a2a7df2f0f1ec5175cdab54cb5f9d7c4c53d",
+      "run-manifest.json": "d1685ea7eb487094e4831a4a7f41ccccdec1ccbcea5f88f915b43e98bb671166",
+      "run_once.py": "c30b6d9132bf52f7436e2dda1809c532cebfb56345c06a15d7ffbddd323367aa",
+      "test_analysis_contract.py": "d05295bdeccbae12aa009d5e4826e6a6595e85994d6720d446036153df07ba4d",
+      "test_fixtures.py": "6faabab62adfb8c42fff57fe0bae41014b0925dbf53f9dadfc8dbb6b17e50e84",
+      "test_recovery.py": "d60345277c55ee239e57880ac6676eac65b2e0461c30b15c71b7e9ff7ef8caa9",
+      "test_run_once.py": "eb7d09506c85209291ae4119310388fb6833f7417f1eed17b4b74a06a7993c7e"
+    },
+    "parent_candidate_id": "sha256:3b76d29c446db8165890363088f355db12cdd0aea5bdb5c195b5441406509036"
+  }
+}

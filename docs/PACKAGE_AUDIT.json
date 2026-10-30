@@ -1,0 +1,10 @@
+{
+  "scope": "Static source-package inspection; no provider call, owner-ledger access, deployment or publication",
+  "runtime_bindings": "PASS",
+  "bound_files": 40,
+  "release_id": "sha256:c2b57f4b3b69dc3a7554a84932b5e23db23af652546379d7bd681e28927e101c",
+  "secret_pattern_scan": "NO_MATCHES",
+  "secret_scan_limit": "Heuristic patterns only; not proof of absence of every possible secret",
+  "changes": "Unbound README updated; historical README and observed application receipt added; reviewed runtime bytes unchanged",
+  "submission": "HOLD; public repository, judge demo, video and F4/F5 unresolved"
+}
