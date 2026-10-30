@@ -1,7 +1,7 @@
 {
-  "release_id": "sha256:a0b6d19d2b2f7795bc05ad491f77ee2d1aa5e91d3b3c1ba0a3b19c8748d906d3",
+  "release_id": "sha256:2f56934dd3ff1b8ef4c9e623aa65328122122fc280d4dffa94b708b22ff66eff",
   "source_candidate_id": "sha256:dbe3b9796f61a780ecec7fdad1a7e8f4dcbcaf24ad09b39612c35a07f66ca9bf",
-  "scope": "Judge presentation candidate: interactive deterministic passage check plus hash-bound recorded live model evidence. No new inference call or release authority.",
+  "scope": "Tavily retrieval successor, offline tested only. New owner approval and exact-candidate review required before one owner-local search; no new inference, hosting, release, or submission authority.",
   "files": {
     ".gitignore": "31d8071cf8626c4712434804d30cd31b49db8553ff980f8e48ea716dcc5f4ad8",
     ".python-version": "7b55f8e67b5623c4bef3fa691288da9437d79d3aba156de48d481db32ac7d16d",
@@ -10,10 +10,10 @@
     "api/review.py": "aa999edd4d9896f7782385a64b7f9a82e7f357e040cac4f43be56f88601e76ca",
     "core.py": "978bbb040d61bfbb33f5dcf5bc24a2a7df2f0f1ec5175cdab54cb5f9d7c4c53d",
     "inference_bridge.py": "c9aa714d91df4071d2ed6462edd6bcaa38e02a7ebdcf5b4c9ff0ffacd84e711a",
-    "public/index.html": "a58803e631cbbaadedb435a41faaa406b6484649addc56737726cc0f4256a5f7",
+    "public/index.html": "c1fdb326053cb828ebd55f26bf5fae92a4ba6717d90744b13aeaa09e6370148f",
     "public/inference.js": "f7dadaa334e8d0a1ab8c98619fce18e169879ac9815d5d3afd8b548d64bd7d11",
     "public/style.css": "cc540d18d27e738ce4c962cd3f37be163e0ffe11fe0b86a445e2777a982d20b8",
-    "public/workspace.css": "f4fe9d821279daf580354bb7d72d236a5dc45918c36275a022bb38ad99db28b7",
+    "public/workspace.css": "7a2de4a82b19b77f12a86a2858110f921f51a76bd84d37487c5017ba7fd118a6",
     "public/workspace.js": "abee24a84a4c8e7f7365f376c5a9599fd90a18ae9f81d861b4267832a5b3315f",
     "requirements.txt": "7b2ca452434e34d2f1b2e8a9311dda64b35710b6ead94207a869cd77342db356",
     "runtime/one-shot-r4/APPROVAL_RECORD.json": "c8e8756bd0a4bef39574652231ff285f548faa0ea3b18ea960d82df744de8940",
@@ -27,7 +27,7 @@
     "runtime/one-shot-r4/test_analysis_contract.py": "d05295bdeccbae12aa009d5e4826e6a6595e85994d6720d446036153df07ba4d",
     "runtime/one-shot-r4/test_run_once.py": "1a02280dfb186b01c66aad30aa9cec75d7c8b53855aca716ef2774474d72b494",
     "tests/test_bridge.py": "ff98f4f94f4aa85167dd0432723fe7801804c27703197bdafcfece3f22a4adcd",
-    "tools/serve.py": "596ee957e20e437f37844346c6d0c0c25d088abf588e36b565fc6d86ed02411e",
+    "tools/serve.py": "4770410290de13296423012082b4026e11f751f97b08d8fd5054f1f48de52f72",
     "tools/serve_inference.py": "3bcc0d5c835b06d88f4add98f7b74b1e52320bc3dd84bb8e60297ae3c59a4529",
     "vercel.json": "0ecba0153edd47ee64d84c9df3904ed464f9dcfbccf39c6e71ab46e100dd6ad1",
     "runtime/one-shot-r5/APPROVAL_RECORD.json": "17b96b7a943a2581d77ebf4457c95977ce7e9d281f4c42db0035e3642c357790",
@@ -44,7 +44,13 @@
     "runtime/one-shot-r5/test_recovery.py": "d60345277c55ee239e57880ac6676eac65b2e0461c30b15c71b7e9ff7ef8caa9",
     "runtime/one-shot-r5/test_run_once.py": "eb7d09506c85209291ae4119310388fb6833f7417f1eed17b4b74a06a7993c7e",
     "public/recorded.js": "2457f59a4632bf00d65010f681f64f9d8ec415686566e5bc613a0e868dc08a8e",
-    "public/recorded-nebius-run.json": "f4b1227712e5c7be01ff47f1f6cdf018b434923c76445b39b8006a021062686a"
+    "public/recorded-nebius-run.json": "f4b1227712e5c7be01ff47f1f6cdf018b434923c76445b39b8006a021062686a",
+    "retrieval.py": "daf58d204451d64c397fbbc155e7f6c7f424c2525a26c4e63a4f9f11912ab31c",
+    "retrieval_guard.py": "553bbfe57720a26068e349a8fecb2d89f52f15fcee98c612d853559481a9007e",
+    "public/research.js": "60b282a381b92cf6bf874ac7e0fbdf1793f0792f1ce9a29450ffea12ebf91d7e",
+    "tools/serve_research.py": "37414f427969bca38660a26b09a69fb713766aa834e3fcfcde13634136e751ac",
+    "tests/test_retrieval.py": "16000702c3e4a81a103c8724fd9759ceaf1cfbf01cc5cd5d21768625196f5689",
+    "tools/test_research.cjs": "e04c3b5a7bdef30a9842b1697aa778279008541953c1ae814042b00fc4afdffe"
   },
-  "parent_release_id": "sha256:c2b57f4b3b69dc3a7554a84932b5e23db23af652546379d7bd681e28927e101c"
+  "parent_release_id": "sha256:a0b6d19d2b2f7795bc05ad491f77ee2d1aa5e91d3b3c1ba0a3b19c8748d906d3"
 }

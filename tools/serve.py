@@ -12,7 +12,7 @@ api=importlib.util.module_from_spec(spec);spec.loader.exec_module(api)
 
 class LocalHandler(api.handler):
     def do_GET(self):
-        static={'/':'index.html','/evidence':'index.html','/style.css':'style.css','/workspace.css':'workspace.css','/workspace.js':'workspace.js','/inference.js':'inference.js','/recorded.js':'recorded.js','/recorded-nebius-run.json':'recorded-nebius-run.json'}
+        static={'/':'index.html','/evidence':'index.html','/style.css':'style.css','/workspace.css':'workspace.css','/workspace.js':'workspace.js','/inference.js':'inference.js','/recorded.js':'recorded.js','/research.js':'research.js','/recorded-nebius-run.json':'recorded-nebius-run.json'}
         if self.path not in static:return super().do_GET()
         file=ROOT/'public'/static[self.path]
         mime='application/json' if file.suffix=='.json' else 'text/html' if file.suffix=='.html' else 'text/css' if file.suffix=='.css' else 'application/javascript'
