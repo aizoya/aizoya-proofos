@@ -1,7 +1,7 @@
 {
-  "release_id": "sha256:c2b57f4b3b69dc3a7554a84932b5e23db23af652546379d7bd681e28927e101c",
+  "release_id": "sha256:a0b6d19d2b2f7795bc05ad491f77ee2d1aa5e91d3b3c1ba0a3b19c8748d906d3",
   "source_candidate_id": "sha256:dbe3b9796f61a780ecec7fdad1a7e8f4dcbcaf24ad09b39612c35a07f66ca9bf",
-  "scope": "Owner-local, separately approved credential recovery; external review pending. Original consumed reservation required and preserved.",
+  "scope": "Judge presentation candidate: interactive deterministic passage check plus hash-bound recorded live model evidence. No new inference call or release authority.",
   "files": {
     ".gitignore": "31d8071cf8626c4712434804d30cd31b49db8553ff980f8e48ea716dcc5f4ad8",
     ".python-version": "7b55f8e67b5623c4bef3fa691288da9437d79d3aba156de48d481db32ac7d16d",
@@ -10,7 +10,7 @@
     "api/review.py": "aa999edd4d9896f7782385a64b7f9a82e7f357e040cac4f43be56f88601e76ca",
     "core.py": "978bbb040d61bfbb33f5dcf5bc24a2a7df2f0f1ec5175cdab54cb5f9d7c4c53d",
     "inference_bridge.py": "c9aa714d91df4071d2ed6462edd6bcaa38e02a7ebdcf5b4c9ff0ffacd84e711a",
-    "public/index.html": "b35e1c93efd069870f695e44c313fdce74757fc50baffd5e13e12fa3f8f92689",
+    "public/index.html": "a58803e631cbbaadedb435a41faaa406b6484649addc56737726cc0f4256a5f7",
     "public/inference.js": "f7dadaa334e8d0a1ab8c98619fce18e169879ac9815d5d3afd8b548d64bd7d11",
     "public/style.css": "cc540d18d27e738ce4c962cd3f37be163e0ffe11fe0b86a445e2777a982d20b8",
     "public/workspace.css": "f4fe9d821279daf580354bb7d72d236a5dc45918c36275a022bb38ad99db28b7",
@@ -27,7 +27,7 @@
     "runtime/one-shot-r4/test_analysis_contract.py": "d05295bdeccbae12aa009d5e4826e6a6595e85994d6720d446036153df07ba4d",
     "runtime/one-shot-r4/test_run_once.py": "1a02280dfb186b01c66aad30aa9cec75d7c8b53855aca716ef2774474d72b494",
     "tests/test_bridge.py": "ff98f4f94f4aa85167dd0432723fe7801804c27703197bdafcfece3f22a4adcd",
-    "tools/serve.py": "f67cae94a5d47964c5acd5c1e60f18c05dc107806be78b8e6c08268ae795d2a9",
+    "tools/serve.py": "596ee957e20e437f37844346c6d0c0c25d088abf588e36b565fc6d86ed02411e",
     "tools/serve_inference.py": "3bcc0d5c835b06d88f4add98f7b74b1e52320bc3dd84bb8e60297ae3c59a4529",
     "vercel.json": "0ecba0153edd47ee64d84c9df3904ed464f9dcfbccf39c6e71ab46e100dd6ad1",
     "runtime/one-shot-r5/APPROVAL_RECORD.json": "17b96b7a943a2581d77ebf4457c95977ce7e9d281f4c42db0035e3642c357790",
@@ -42,7 +42,9 @@
     "runtime/one-shot-r5/test_analysis_contract.py": "d05295bdeccbae12aa009d5e4826e6a6595e85994d6720d446036153df07ba4d",
     "runtime/one-shot-r5/test_fixtures.py": "6faabab62adfb8c42fff57fe0bae41014b0925dbf53f9dadfc8dbb6b17e50e84",
     "runtime/one-shot-r5/test_recovery.py": "d60345277c55ee239e57880ac6676eac65b2e0461c30b15c71b7e9ff7ef8caa9",
-    "runtime/one-shot-r5/test_run_once.py": "eb7d09506c85209291ae4119310388fb6833f7417f1eed17b4b74a06a7993c7e"
+    "runtime/one-shot-r5/test_run_once.py": "eb7d09506c85209291ae4119310388fb6833f7417f1eed17b4b74a06a7993c7e",
+    "public/recorded.js": "2457f59a4632bf00d65010f681f64f9d8ec415686566e5bc613a0e868dc08a8e",
+    "public/recorded-nebius-run.json": "f4b1227712e5c7be01ff47f1f6cdf018b434923c76445b39b8006a021062686a"
   },
-  "parent_release_id": "sha256:3e66666d70b02cc490906b1f2da7b04eaf1cb52fe0ac1d05dd7be0333d71c2ef"
+  "parent_release_id": "sha256:c2b57f4b3b69dc3a7554a84932b5e23db23af652546379d7bd681e28927e101c"
 }

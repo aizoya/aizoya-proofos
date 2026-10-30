@@ -1,3 +1,5 @@
+HISTORICAL PRE-RUN SNAPSHOT — not current status. Both attempts have now been consumed; see the main README and observed receipt.
+
 # AIZOYA ProofOS credential recovery R5
 
 App: sha256:c2b57f4b3b69dc3a7554a84932b5e23db23af652546379d7bd681e28927e101c

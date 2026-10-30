@@ -1,10 +1,18 @@
 {
-  "scope": "Static source-package inspection; no provider call, owner-ledger access, deployment or publication",
-  "runtime_bindings": "PASS",
-  "bound_files": 40,
-  "release_id": "sha256:c2b57f4b3b69dc3a7554a84932b5e23db23af652546379d7bd681e28927e101c",
-  "secret_pattern_scan": "NO_MATCHES",
-  "secret_scan_limit": "Heuristic patterns only; not proof of absence of every possible secret",
-  "changes": "Unbound README updated; historical README and observed application receipt added; reviewed runtime bytes unchanged",
-  "submission": "HOLD; public repository, judge demo, video and F4/F5 unresolved"
+  "scope": "Successor judge presentation source only",
+  "release_id": "sha256:a0b6d19d2b2f7795bc05ad491f77ee2d1aa5e91d3b3c1ba0a3b19c8748d906d3",
+  "bound_files": 42,
+  "runtime_hash_postcheck": "PASS",
+  "guard_changed": false,
+  "source_parent_commit": "440ce9250cafe2bbb6cf4ec10ca6728cf54de4e1",
+  "changes": [
+    "HTML recorded-run presentation",
+    "static serving of recorded assets",
+    "new recorded viewer JS",
+    "exact historical receipt copied to static public asset"
+  ],
+  "release_acceptance": "REVIEW_REQUIRED",
+  "f4_f5": "OPEN",
+  "previous_tested_release_id": "sha256:81a886dbd32142126b519a7ffe32daa1488a3a0f7e3e34348f77c2ba6e692537",
+  "followup": "HTML labels and unbound documentation only; original test runs precede this wording correction. Fresh JS and source checks follow."
 }

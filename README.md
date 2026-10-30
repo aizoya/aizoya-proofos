@@ -1,4 +1,12 @@
-# AIZOYA ProofOS
+# AIZOYA ProofOS — judge presentation candidate
+
+This is a successor presentation candidate, not the already reviewed R5 application. Its new app release is `sha256:a0b6d19d2b2f7795bc05ad491f77ee2d1aa5e91d3b3c1ba0a3b19c8748d906d3`. The original R5 provider receipt retains its historical release identity. No new inference grant is created.
+
+Judges can interact with a deterministic passage checker and inspect/download a clearly labeled recorded live Nebius/NVIDIA response. The recorded response is never represented as fresh analysis of the judge’s edited text. Its packaged hash establishes byte consistency, not provider provenance. Both paid attempts remain consumed.
+
+Run `python3 tools/serve.py --port 8766` and open http://127.0.0.1:8766. No key is needed. `node tools/test_recorded.cjs` checks the actual recorded-result script with DOM doubles, tampering and error cases; it is not a real-browser test.
+
+The production custom-domain path requires `PROOFOS_PUBLIC_ORIGIN=https://proofos.aizoya.com`. Preview deployments use the existing platform-origin resolver. Public access, DNS/TLS and deployed acceptance are not established by source preparation.
 
 AI that doesn’t just say it’s done. It proves it.
 
@@ -21,7 +29,7 @@ python3 -m unittest discover -s tests -v
 python3 tools/serve.py --port 8766
 ```
 
-Open http://127.0.0.1:8766 on the same computer. Review the prepared sample, enter or edit a claim and excerpt, run the deterministic passage check, and inspect/download its receipt. This command does **not** enable live model inference. Its model panel is unavailable; this is an explicit scope boundary.
+Open http://127.0.0.1:8766 on the same computer. Review the prepared sample, enter or edit a claim and excerpt, run the deterministic passage check, and inspect/download its receipt. This command does **not** enable live model inference. Its model panel reads the historical recorded receipt only; live inference remains unavailable.
 
 ## NVIDIA and Nebius integration
 
@@ -31,7 +39,7 @@ The historical live run required an explicit owner-approved request, fixed persi
 
 ## Source identity and validation
 
-The reviewed runtime is preserved byte-for-byte under app release `sha256:c2b57f4b3b69dc3a7554a84932b5e23db23af652546379d7bd681e28927e101c` and guard `sha256:49aff9f118883edfe9f34067cd548f92bc7f1aa848653b0d10263065f9af5e2f`. `release.json` binds 40 runtime files; README and the added documentation are outside that historical runtime map. See `docs/PACKAGE_AUDIT.json` for this source-package inspection. Hashes establish internal consistency, not who ran tests or approved actions.
+The original provider run used app release `sha256:c2b57f4b3b69dc3a7554a84932b5e23db23af652546379d7bd681e28927e101c` and guard `sha256:49aff9f118883edfe9f34067cd548f92bc7f1aa848653b0d10263065f9af5e2f`. The successor changes presentation/static-serving files and adds the recorded receipt assets; its new `release.json` binds 42 files. The R5 inference guard and provider transport stay unchanged. README and added documentation remain outside that runtime map. See `docs/PACKAGE_AUDIT.json` for this source-package inspection. Hashes establish internal consistency, not who ran tests or approved actions.
 
 Prior author and supplied reviewer results report 48 guard tests, 16 backend tests and 22 VM/loopback journey assertions. Those results are not native Safari, accessibility, hosted multi-tenant security or business-outcome acceptance.
 
@@ -50,3 +58,15 @@ Managed Token Factory API access enabled a focused Nemotron assessment without G
 ## License
 
 MIT; see [LICENSE](LICENSE). The project owner confirmed this is a new project with no version before August 26, 2026.
+
+## Final QA reconciliation — October 30
+
+A supplied Claude review of the parent app c2b57f4b / commit440ce925 returned MODIFY for stale pre-run UI copy and receipt/governance documentation. Its executed 48 R5,16 app and40 R4 tests belong to that parent review, not this presentation delta. This successor replaces the outdated live-attempt panel with the recorded-result workflow; it still requires a new exact-candidate review.
+
+The nested `source_review` is the deterministic sub-check. Its zero-provider-call count and live-inference NOT_CHECKED entry apply only to that component. The outer receipt holds the observed model call. `task_id` is a display identifier generated after execution and does not identify the persistent run ledger. Reconciliation uses the retained ledger plus provider `response_id`. The original receipt is preserved unchanged; do not treat its nested check as whole-workflow verification. Persisting a canonical task ID would be a separate runtime change requiring review.
+
+Guard elapsed includes the post-response checkpoint write. Initial reservation and final terminal writes are outside the timer. The original receipt wording remains historical; this clarification controls presentation of its timing.
+
+See [the pre-run acceptance-note supplement](docs/R5_PRE_RUN_REVIEW_RECORD.md) for the source artifact missing from the earlier packet. It is author-recorded evidence of a supplied GO, not signed external-review provenance; that distinction remains subject to reviewer acceptance. Do not retroactively treat the latest review as execution authorization.
+
+The filesystem guard tests need POSIX capabilities, including `pwd`, `dir_fd`, FIFO and no-follow support. Unsupported platforms are not accepted by these results.
