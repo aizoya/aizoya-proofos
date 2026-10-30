@@ -1,3 +1,40 @@
+# Tavily retrieval successor — October 30, 2026
+
+This successor adds owner-local Tavily Search to the existing ProofOS judge app. **Implemented and offline tested; live Tavily execution has NOT run.** It does not renew or reuse either Nebius attempt. The recorded Nemotron response still applies only to its original operator-supplied passage. No new model assesses retrieved search text.
+
+Start with `python3 tools/serve_research.py --preflight` to verify the release and print the exact request plus an **unapproved** approval template. This does not load credentials, access an owner reservation, write a ledger, or call Tavily.
+
+`python3 tools/serve_research.py` starts the app on loopback with retrieval locked. The live path requires an external exact-candidate GO, explicit owner credit-only approval, one available Tavily credit, a private shell `TAVILY_API_KEY`, and a completed approval file passed with `--approval-file`. Do not put a key in an approval file, source, URL, screenshot, or chat. `--approval-file` alone does not initiate a request; the owner must click the prepared-search button once while the service reports ready.
+
+The fixed query searches only organizer pages, Basic depth, up to three results, no generated answer, no images/raw HTML, automatic parameter selection off, usage reporting on, and max_age_hours=0. Tavily documents one API credit for Basic Search; this is not a provider-enforced billing cap. Account balance and overage settings are not verified by this code. No paid overage is authorized. Do not approve unless an included credit remains available.
+
+The new fixed persistent reservation is `~/.aizoya/proofos/tavily-search-20261030-01.json`, resolved through the OS account record rather than HOME. This is a separate proposed Tavily authority, not a reset of Nebius. The guard uses the frozen R5 directory-pinning and atomic-persistence helpers; it never opens the two consumed Nebius reservations. One failed/uncertain request consumes the Tavily attempt. Preserve its record and terminal evidence; do not delete or relocate it to retry. Owner-local POSIX only. Ephemeral Vercel storage is not an acceptable live reservation store.
+
+The hosted static app remains safe without a live search route. No Vercel `/api/research` function or public paid endpoint is added. The `serve_research.py` bridge is loopback-only and checks Host, Origin, custom header and bounded request before execution. Default local `tools/serve.py` still supports the deterministic review and recorded model viewer, with Tavily unavailable.
+
+Search cards show untrusted excerpts and original links. “Use this source” loads its excerpt and link into the passage-check form, clears the old result and quotation, and asks the user to select an exact quote. The resulting deterministic receipt describes operator-selected text, not independently authenticated retrieval. The separate retrieval receipt carries request identity, response evidence, sources, source hashes, observed credits, timestamps and limitations. Download both for reconciliation. Search completion is NEEDS_REVIEW and fully_verified remains false.
+
+Tavily search excerpts are not proof of original page authenticity, publication date, factual support or absence of contradictions. Retrieval timestamps record the app's observation time, not publication time. Provider-reported credits are not an independently verified invoice. Network timeout is per I/O; direct proxies are disabled; no retries or redirects. Response bodies are bounded at 256 KiB, checkpointed before validation, and may contain public untrusted text. No analytics added.
+
+## Offline verification
+
+- `python3 tools/verify.py`
+- `python3 -m unittest discover -s tests -v`
+- `python3 -m unittest discover -s runtime/one-shot-r5 -v`
+- `node tools/test_recorded.cjs`
+- `node tools/test_research.cjs`
+- `python3 tools/serve_research.py --preflight`
+
+All test transport injection is Python-only and marked TEST_DOUBLE, with zero provider calls. No fake runtime evidence is shipped as an observed Tavily result. A real browser, mobile/Safari, hosted acceptance, actual credit balance and live Tavily behavior remain unverified until exercised. The parent review records below remain historical. F4/F5, release and submission gates remain open.
+
+Official API and pricing references checked October 30, 2026:
+https://docs.tavily.com/documentation/api-reference/endpoint/search
+https://docs.tavily.com/documentation/api-credits
+
+---
+
+## Historical parent documentation
+
 # AIZOYA ProofOS — judge presentation candidate
 
 This is a successor presentation candidate, not the already reviewed R5 application. Its new app release is `sha256:a0b6d19d2b2f7795bc05ad491f77ee2d1aa5e91d3b3c1ba0a3b19c8748d906d3`. The original R5 provider receipt retains its historical release identity. No new inference grant is created.

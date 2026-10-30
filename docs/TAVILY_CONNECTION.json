@@ -1,0 +1,15 @@
+{
+  "provider": "Tavily",
+  "product": "AIZOYA ProofOS",
+  "environment": "owner-local development",
+  "status": "partial",
+  "capabilities": [
+    "Prepared Search transport implemented",
+    "Offline fake transport and loopback tests passed"
+  ],
+  "evidence": "docs/TAVILY_READINESS.json; no live runtime response",
+  "verified_at": "2026-10-30T15:07:56.143969+00:00",
+  "expires_at": "2026-10-30T17:00:00+00:00",
+  "blocker": "Fresh exact-candidate external review, owner one-credit approval, private key and confirmed available credit",
+  "owner_action": "Review the exact plan; keep secrets only in the local shell. No credential has been accessed by this agent."
+}

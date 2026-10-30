@@ -14,5 +14,7 @@
   "release_acceptance": "REVIEW_REQUIRED",
   "f4_f5": "OPEN",
   "previous_tested_release_id": "sha256:81a886dbd32142126b519a7ffe32daa1488a3a0f7e3e34348f77c2ba6e692537",
-  "followup": "HTML labels and unbound documentation only; original test runs precede this wording correction. Fresh JS and source checks follow."
+  "followup": "HTML labels and unbound documentation only; original test runs precede this wording correction. Fresh JS and source checks follow.",
+  "historical_parent_only": true,
+  "superseded_by": "Tavily successor; see docs/TAVILY_READINESS.json for current checks"
 }
