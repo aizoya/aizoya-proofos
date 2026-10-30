@@ -1,0 +1,17 @@
+{
+  "candidate_id": "sha256:3b76d29c446db8165890363088f355db12cdd0aea5bdb5c195b5441406509036",
+  "identity": {
+    "files": {
+      "APPROVAL_RECORD.json": "c8e8756bd0a4bef39574652231ff285f548faa0ea3b18ea960d82df744de8940",
+      "APPROVAL_SCOPE.txt": "3d73de5f10a06602cae6a16e339bc0fc5ec2e72116dfe6006128bcd763fe0c6d",
+      "REVIEW_REQUEST.md": "d7862c973402a2bde29a9afd9170dc08b9a4fcfc0954d654679979fda6309dbe",
+      "analysis_contract.py": "99e72da6f78cf98b36ef1ef116f251a9bfa3e6125182aa9122e5a557e442a27c",
+      "core.py": "978bbb040d61bfbb33f5dcf5bc24a2a7df2f0f1ec5175cdab54cb5f9d7c4c53d",
+      "run-manifest.json": "68967b28b49379239984dfaf7a6076e4f58d94efa4b917c310edecf15dc3de0d",
+      "run_once.py": "52dc46a2f52be2fcb793231ab170613f26e1ef13532368560661ff5a84dd46de",
+      "test_analysis_contract.py": "d05295bdeccbae12aa009d5e4826e6a6595e85994d6720d446036153df07ba4d",
+      "test_run_once.py": "1a02280dfb186b01c66aad30aa9cec75d7c8b53855aca716ef2774474d72b494"
+    },
+    "parent_candidate_id": "sha256:fd9139b3c9118983a770741a67f797f6f8570119b7d8f1e66e076264110cf0a3"
+  }
+}

@@ -1,0 +1,6 @@
+Renewed by owner response Approve on October29,2026 to the exact preceding scoped question.
+One Nebius-only request, unchanged published sample and model request hash,1024 maximum output tokens,zero retries,$0.05 estimated budget (not a provider billing cap).30second timeout per I/O,not total elapsed.
+Expires2026-10-30T14:00:00Z = October30 7AM Pacific. Effective no earlier than recorded approval time.
+Conditional on external review accepting the renewed exact candidate before a live call. No live execution or GO is claimed here.
+Same owner-account-derived persistent reservation nebius-only-20261027-01.json; existing file blocks. No new run counter,reset or replacement ledger. Original September SQLite untouched.
+No deployment,publication,merge,submission,Tavily,fallback or additional attempt. F4/F5 remain blocking. fully_verified false. Approval record is a transcript-derived author record,not signed outside provenance.
